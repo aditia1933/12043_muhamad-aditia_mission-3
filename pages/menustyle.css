@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  */
+body {
+  background-color: black;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Mengatur jarak antara elemen-elemen di dalam nav */
+  align-items: center;
+  padding: 20px 80px; /* Menambahkan padding agar tampilan lebih rapi */
+  background-color: #181a1c;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.logo ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 103px;
+  height: 44px;
+  margin-left: 20px; /* Memberikan jarak antara gambar logo dan teks "kategori" */
+}
+
+.logo-2 {
+  display: flex;
+  align-items: center;
+}
+
+.logo-2 img {
+  width: 76px;
+  height: 40px;
+}
+/*  */
+.header {
+  margin: 10px auto; /* Atur margin atas dan bawah 10px, sementara margin kiri dan kanan auto */
+  width: 80%; /* Atur lebar header, bisa disesuaikan sesuai kebutuhan */ /* Atur posisi relative untuk header */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url("/images/Rectangle\ 9.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 1.4rem 6%;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(16, 18, 19, 0.479),
+    rgba(24, 26, 28, 0.166)
+  );
+}
+
+.hero .content {
+  z-index: 1;
+  color: #fff;
+  max-width: 50%;
+}
+
+.hero .content h1 {
+  font-size: 3.5em;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+}
+
+.hero .content p {
+  color: #fff;
+  /* Body Large/Large-Medium */
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.2px;
+  margin-bottom: 1.5rem;
+}
+
+.caption {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn,
+.border {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 48px;
+  background: var(--Primary-300, #0F1E93);
+  color: white
+}
+
+.border {
+  background-color: rgba(231, 227, 252, 0.23);
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px solid var(--text-light-secondary, #C1C2C4);
+  background: transparent;
+  color: #C1C2C4;
+}
+
+/*  */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 80px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.slider-container {
+  width: 100%;
+  margin-left: 10px;
+}
+.swiper-container header h3 {
+  margin: 35px 0;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.img-lanscape img {
+  display: flex;
+  height: 162px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+.img-box img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.swiper-slide h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+/*  */
+
+footer {
+  padding: 60px 50px; /* Mengurangi padding agar lebih responsif */
+  display: flex;
+  flex-wrap: wrap; /* Memastikan elemen dalam footer bisa membungkus */
+  background-color: #181a1c;
+  width: 100%;
+  font-size: 160x;
+  box-sizing: border-box; /* Memastikan padding termasuk dalam ukuran elemen */
+}
+
+footer .text-kiri {
+  flex: .5; /* Membuat elemen ini mengambil ruang yang tersedia */
+  min-width: 200px; /* Menetapkan lebar minimum agar tidak terlalu kecil */
+  margin-right: 20px; /* Jarak antara text-kiri dan text-kanan */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+footer .text-kiri p {
+  margin-top: 10px;
+}
+
+footer .text-kanan {
+  display: flex;
+  flex: 1; /* Membuat elemen ini mengambil lebih banyak ruang */
+  justify-content: space-between; /* Mengatur jarak antara kolom */
+  flex-wrap: wrap; /* Memastikan kolom bisa membungkus saat layar kecil */
+  min-width: 200px; /* Menetapkan lebar minimum agar tidak terlalu kecil */
+}
+
+footer .text-kanan > div {
+  flex: 1; /* Membuat setiap kolom mengambil ruang yang tersedia */
+  min-width: 150px; /* Menetapkan lebar minimum agar kolom tidak terlalu kecil */
+}
+
+footer .text-kanan p {
+  margin: 5px 0; /* Memberikan jarak vertikal pada teks */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    top: 50%;
+  }
+}
